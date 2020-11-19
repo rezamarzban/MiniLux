@@ -1,3 +1,5 @@
+#!/bin/busybox sh
+
 busybox rm /init
 busybox mkdir -p /etc /proc /root /sbin /sys /usr/bin /usr/sbin
 echo tty1::respawn:/sbin/getty 0 tty1 > /etc/inittab
