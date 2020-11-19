@@ -17,6 +17,7 @@ install -Dm0755 busybox-x86_64 initramfs/bin/busybox
 install -Dm0755 init.sh initramfs/init
 cp rootfs.sh initramfs/
 upx --brute initramfs/bin/busybox
+rm initramfs.gz
 cd initramfs
 find . | sort | cpio -o -H newc -R 0:0 | gzip -9 > ../initramfs.gz
 cd ..
