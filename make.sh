@@ -36,5 +36,5 @@ echo Run bash qemu.sh
 echo Or run:
 echo qemu-system-x86_64 -cpu max -smp $(nproc) -m 128M -kernel linux -initrd initramfs.gz -hda hard.img -net user -net nic -nographic -append "console=ttyS0" -no-reboot
 echo 
-echo If make fail, Run remake.sh (without again sources downloading).
+echo If make fail, Run bash remake.sh (without again sources downloading).
 echo 
