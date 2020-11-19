@@ -13,7 +13,7 @@ wget http://cdimage.ubuntu.com/ubuntu-base/releases/18.04/release/ubuntu-base-18
 wget http://mirrors.kernel.org/ubuntu/pool/main/l/linux/linux-modules-4.15.0-112-generic_4.15.0-112.113_amd64.deb
 
 #Step5: Make initramfs image!
-rm -r initramfs
+rm -r -f initramfs
 install -Dm0755 busybox-x86_64 initramfs/bin/busybox
 install -Dm0755 init.sh initramfs/init
 cp rootfs.sh initramfs/
