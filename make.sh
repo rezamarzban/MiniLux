@@ -21,3 +21,13 @@ rm initramfs.gz
 cd initramfs
 find . | sort | cpio -o -H newc -R 0:0 | gzip -9 > ../initramfs.gz
 cd ..
+
+#Step6: Make rootfs image!
+rm -r -f ubunturootfs
+rm -r ubunturootfs.img
+mkdir ubunturootfs
+tar -xf *ubuntu*base*.tar.gz -C ubunturootfs
+install -Dm0755 busybox-x86_64 ubunturootfs/bin/busybox
+cp *.deb ubunturootfs/root/
+cp config.sh ubunturootfs/
+mke2fs -L '' -N 0 -O ^64bit -d "ubunturootfs" -m 5 -r 1 -t ext2 "hard.img" 1G
