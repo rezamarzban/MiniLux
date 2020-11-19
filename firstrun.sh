@@ -3,4 +3,4 @@
 echo 
 echo This is first run. Installing linux modules ...
 dpkg -i /root/*linux*modules*.deb
-rm /root/firstrun.sh
+mv /root/firstrun.sh /root/doNotRunAgain.sh
