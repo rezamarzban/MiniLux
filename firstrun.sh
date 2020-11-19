@@ -1,0 +1,6 @@
+
+#First run linux modules installation ...
+echo 
+echo This is first run. Installing linux modules ...
+dpkg -i /root/*linux*modules*.deb
+rm /root/firstrun.sh
