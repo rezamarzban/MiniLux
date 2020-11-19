@@ -1,6 +1,8 @@
 # MiniLux
 simple Minimum Linux initramfs and rootfs images shell script builder with networking support from official sources X86_64
 
+A simple and fast powerful AMD/Intel 64bit linux on your arm64/armhf Android phone or Raspberry pi 1,2,3,4; Bring powerful X86_64 computer processing to your arm64/armhf device with it.
+
 minimum system requirements for MiniLux:
 
 CPU: pentium II
