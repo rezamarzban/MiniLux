@@ -8,3 +8,6 @@ wget http://archive.ubuntu.com/ubuntu/dists/bionic-updates/main/installer-amd64/
 
 #Step3: Download latest famous linux distribution base archived file (Ubuntu 18.04 LTS) from its official website.
 wget http://cdimage.ubuntu.com/ubuntu-base/releases/18.04/release/ubuntu-base-18.04.5-base-amd64.tar.gz
+
+#Step4: Download linux modules installer package according to linux Kernel version and linux distribution from its official website.
+wget http://mirrors.kernel.org/ubuntu/pool/main/l/linux/linux-modules-4.15.0-112-generic_4.15.0-112.113_amd64.deb
