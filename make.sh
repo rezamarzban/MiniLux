@@ -23,7 +23,7 @@ cd initramfs
 find . | sort | cpio -o -H newc -R 0:0 | gzip -9 > ../initramfs.gz
 cd ..
 
-#Step6: Make rootfs image!
+#Step6: Make rootfs image (for qemu virtual machine).
 rm -r -f ubunturootfs
 rm -r ubunturootfs.img
 mkdir ubunturootfs
