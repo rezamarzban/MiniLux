@@ -4,7 +4,7 @@ mount -t ext2 /dev/sda /root
 
 echo 
 echo Welcome to MiniLux real root filesystem.
-echo Run bash config.sh to configuring system and network.
+echo Run bash /config.sh to configuring system and network.
 echo 
 
 #Step2: Change root to hard drive and launch the real filesystem.
