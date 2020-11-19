@@ -19,7 +19,7 @@ Making images and launching QEMU virtual machine:
 
 4- while real root filesystem has been launched run "bash /config.sh" to configuring system and network. At first time it takes more time to complete because of installing linux modules.
 
-5- Run "busybox ping google.com" and enjoy! Ctrl+c for escaping.
+5- Run "busybox ping google.com" and enjoy! Press Ctrl+c to breaking the process.
 
 6- For exit run "exit" at real root filesystem mode. For quit run "busybox reboot" at real filesystem mode or run "reboot" at RAM filesystem mode.
 
