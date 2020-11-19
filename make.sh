@@ -11,3 +11,11 @@ wget http://cdimage.ubuntu.com/ubuntu-base/releases/18.04/release/ubuntu-base-18
 
 #Step4: Download linux modules installer package according to linux Kernel version and linux distribution version from its official website.
 wget http://mirrors.kernel.org/ubuntu/pool/main/l/linux/linux-modules-4.15.0-112-generic_4.15.0-112.113_amd64.deb
+
+#Step5: Make initramfs image!
+install -Dm0755 busybox-x86_64 initramfs/bin/busybox
+install -Dm0755 init.sh initramfs/init
+upx --brute initramfs/bin/busybox
+cd initramfs
+find . | sort | cpio -o -H newc -R 0:0 | gzip -9 > ../initramfs.gz
+cd ..
