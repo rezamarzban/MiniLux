@@ -1,4 +1,4 @@
-#Minimum Linux initramfs and rootfs images builder with networking support from official sources X86_64
+#simple Minimum Linux initramfs and rootfs images shell script builder with networking support from official sources X86_64
 
 #Step1: Download latest binary busybox from its official website.
 wget https://busybox.net/downloads/binaries/1.31.0-defconfig-multiarch-musl/busybox-x86_64
