@@ -25,7 +25,7 @@ cd ..
 
 #Step6: Make rootfs image (for qemu virtual machine).
 rm -r -f ubunturootfs
-rm -r ubunturootfs.img
+rm -r hard.img
 mkdir ubunturootfs
 tar -xf *ubuntu*base*.tar.gz -C ubunturootfs
 install -Dm0755 busybox-x86_64 ubunturootfs/bin/busybox
