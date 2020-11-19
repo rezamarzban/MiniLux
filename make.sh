@@ -13,19 +13,15 @@ wget http://cdimage.ubuntu.com/ubuntu-base/releases/18.04/release/ubuntu-base-18
 wget http://mirrors.kernel.org/ubuntu/pool/main/l/linux/linux-modules-4.15.0-112-generic_4.15.0-112.113_amd64.deb
 
 #Step5: Make initramfs image!
-rm -r -f initramfs
 install -Dm0755 busybox-x86_64 initramfs/bin/busybox
 install -Dm0755 init.sh initramfs/init
 cp rootfs.sh initramfs/
 upx --brute initramfs/bin/busybox
-rm initramfs.gz
 cd initramfs
 find . | sort | cpio -o -H newc -R 0:0 | gzip -9 > ../initramfs.gz
 cd ..
 
 #Step6: Make rootfs image (for qemu virtual machine). Increase hard disk image size by changing 1G to 2G and more at last command.
-rm -r -f ubunturootfs
-rm -r hard.img
 mkdir ubunturootfs
 tar -xf *ubuntu*base*.tar.gz -C ubunturootfs
 install -Dm0755 busybox-x86_64 ubunturootfs/bin/busybox
@@ -39,4 +35,6 @@ echo
 echo Run bash qemu.sh
 echo Or run:
 echo qemu-system-x86_64 -cpu max -smp $(nproc) -m 128M -kernel linux -initrd initramfs.gz -hda hard.img -net user -net nic -nographic -append "console=ttyS0" -no-reboot
+echo 
+echo If make fail, Run remake.sh (without again sources downloading).
 echo 
