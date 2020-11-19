@@ -11,7 +11,7 @@ RAM: 64MB
 
 Making images and launching QEMU virtual machine:
 
-1- Just run "bash make.sh"
+1- Just run "bash make.sh". If it fail, Run "bash remake.sh" (without again sources downloading).
 
 2- Just run "bash qemu.sh" if you installed qemu-system-X86-64.
 
