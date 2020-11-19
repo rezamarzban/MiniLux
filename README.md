@@ -7,7 +7,7 @@ CPU: pentium II
 
 RAM: 64MB
 
-Making and launching QEMU virtual machine:
+Making images and launching QEMU virtual machine:
 
 1- Just run "bash make.sh"
 
