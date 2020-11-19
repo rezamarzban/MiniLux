@@ -7,7 +7,8 @@ echo tty4::respawn:/sbin/getty 0 tty4 >> /etc/inittab
 echo tty5::respawn:/sbin/getty 0 tty5 >> /etc/inittab
 echo tty6::respawn:/sbin/getty 0 tty6 >> /etc/inittab
 echo ttyS0::respawn:/sbin/getty -L ttyS0 9600 vt100 >> /etc/inittab
-echo Welcome to MiniLux. > /etc/issue
+echo Welcome to MiniLux. You need to run rootfs.sh to mounting real filesystem after login or maybe need to change its code to meetings your requirements. > /etc/issue
+echo >> /etc/issue
 echo Login with root and no password. >> /etc/issue
 echo >> /etc/issue
 echo root::0:0:root:/root:/bin/sh > /etc/passwd
