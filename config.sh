@@ -1,5 +1,6 @@
 
 #Config ... 
+bash /root/firstrun.sh
 busybox mount -t proc proc /proc
 busybox mount -t sysfs sys /sys
 busybox mdev -s
