@@ -31,5 +31,5 @@ https://drive.google.com/drive/folders/1bFqMWRk9mZFgaeH01mOWUFxZnz7NMOks?usp=sha
 
 6- For exit run "exit" at real root filesystem mode. For quit run "busybox reboot" at real filesystem mode or run "reboot" at RAM filesystem mode.
 
-7- Pickup the "linux", "initramfs.gz", "hard.img" and "qemu.sh" files from project directory. Everytime that you want to boot to real root filesystem follow 2,3 and 4 here instructions.
+7- Pickup the "linux", "initramfs.gz", "hard.img" and "qemu.sh" files from project directory. Everytime that you want to boot to real root filesystem follow the number 2,3 and 4 here instructions.
 
