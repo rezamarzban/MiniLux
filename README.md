@@ -4,6 +4,7 @@ simple Minimum Linux shell script initramfs and rootfs images builder with netwo
 A simple and fast powerful AMD/Intel 64bit linux on arm64/armhf Android phones and Raspberries pi 1,2,3,4,... ; Bring powerful X86_64 computer processes to arm64/armhf devices with it.
 
 Install latest famous linux distribution only in one minute!
+
 MiniLux shell script initramfs and rootfs images builder, Very fast making from 40MB official downloaded sources only in one minute. Very fast booting only in less than one minute.
 
 minimum system requirements for MiniLux:
