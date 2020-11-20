@@ -22,7 +22,7 @@ cd initramfs
 find . | sort | cpio -o -H newc -R 0:0 | gzip -9 > ../initramfs.gz
 cd ..
 
-#Step6: Make rootfs image (for virtual machine). Increase hard disk image size by changing 1G to 2G and more at last command.
+#Step6: Make rootfs image (for virtual machines). Increase hard disk image size by changing 1G to 2G and more at last command.
 rm -r -f ubunturootfs
 rm -r hard.img
 mkdir ubunturootfs
