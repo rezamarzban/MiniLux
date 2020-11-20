@@ -17,7 +17,7 @@ https://drive.google.com/drive/folders/1bFqMWRk9mZFgaeH01mOWUFxZnz7NMOks?usp=sha
 
 1- Watch A_git_clone.mp4 & B_bash_make.mp4 films: First you need a working internet connection, After git cloning the project run "bash make.sh" in the project directory if you installed wget and upx-ucl. After running it, you should have "initramfs.gz" and "disk.img" files in the project directory. If runing "bash make.sh" fail to making initramfs and rootfs files check the problem then run "bash remake.sh" (without again sources downloading).
 
-2- Watch C_bash_qemu.mp4 film: Just run "bash qemu.sh" if you installed qemu-system-X86-64.
+2- Watch C_bash_qemu.mp4 film: Just run "bash qemu.sh" if you installed qemu-system-X86_64.
 
 3- Watch D_sh_rootfs.mp4 film: While virtual machine has been launched, It will boot to RAM filesystem mode. Login to it with username "root" and no password. Then run "sh /rootfs.sh" to mounting real root filesystem.
 
