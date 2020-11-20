@@ -11,15 +11,19 @@ RAM: 64MB
 
 Making images and launching QEMU virtual machine:
 
-1- First you need a working internet connection, After git cloning the project run "bash make.sh" in the project directory. After running it, you should have "initramfs.gz" and "disk.img" files in the project directory. If runing "bash make.sh" fail to making initramfs and rootfs files check the problem then run "bash remake.sh" (without again sources downloading).
+Education films for MiniLux are here:
 
-2- Just run "bash qemu.sh" if you installed qemu-system-X86-64.
+https://drive.google.com/drive/folders/1bFqMWRk9mZFgaeH01mOWUFxZnz7NMOks?usp=sharing
 
-3- While virtual machine has been launched, It will boot to RAM filesystem mode. Login to it with username "root" and no password. Then run "sh /rootfs.sh" to mounting real root filesystem.
+1- Watch A_git_clone.mp4 & B_bash_make.mp4 films: First you need a working internet connection, After git cloning the project run "bash make.sh" in the project directory. After running it, you should have "initramfs.gz" and "disk.img" files in the project directory. If runing "bash make.sh" fail to making initramfs and rootfs files check the problem then run "bash remake.sh" (without again sources downloading).
 
-4- while real root filesystem has been launched run "bash /config.sh" to configuring system and network. At first time it takes more time to complete because of installing linux modules.
+2- Watch C_bash_qemu.mp4 film: Just run "bash qemu.sh" if you installed qemu-system-X86-64.
 
-5- Run "busybox ping google.com" and enjoy! Press Ctrl+c to breaking the process.
+3- Watch D_sh_rootfs.mp4 film: While virtual machine has been launched, It will boot to RAM filesystem mode. Login to it with username "root" and no password. Then run "sh /rootfs.sh" to mounting real root filesystem.
+
+4- Watch E_bash_config.mp4 film: while real root filesystem has been launched run "bash /config.sh" to configuring system and network. At first time it takes more time to complete because of installing linux modules.
+
+5- Watch F_ping_google.mp4 film: Run "busybox ping google.com" and enjoy! Press Ctrl+c to breaking the process.
 
 6- For exit run "exit" at real root filesystem mode. For quit run "busybox reboot" at real filesystem mode or run "reboot" at RAM filesystem mode.
 
