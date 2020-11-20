@@ -11,7 +11,7 @@ RAM: 64MB
 
 Making images and launching QEMU virtual machine:
 
-1- Just run "bash make.sh". If it fail, Run "bash remake.sh" (without again sources downloading) after correcting problems.
+1- First you need a working internet connection, After git cloning the project run "bash make.sh" in the project directory. After running it, you should have "initramfs.gz" and "disk.img" files in current directory. If "bash make.sh" fail, Run "bash remake.sh" (without again sources downloading) after correcting problems.
 
 2- Just run "bash qemu.sh" if you installed qemu-system-X86-64.
 
