@@ -33,8 +33,7 @@ mke2fs -L '' -N 0 -O ^64bit -d "ubunturootfs" -m 5 -r 1 -t ext2 "hard.img" 1G
 #Step6: Run qemu ...
 echo 
 echo Run bash qemu.sh
-echo Or run:
-echo qemu-system-x86_64 -cpu max -smp $(nproc) -m 128M -kernel linux -initrd initramfs.gz -hda hard.img -net user -net nic -nographic -append "console=ttyS0" -no-reboot
 echo 
 echo If make fail, Run bash remake.sh (without again sources downloading).
+echo 
 echo 
