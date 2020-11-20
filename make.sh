@@ -16,7 +16,6 @@ wget http://mirrors.kernel.org/ubuntu/pool/main/l/linux/linux-modules-4.15.0-112
 install -Dm0755 busybox-x86_64 initramfs/bin/busybox
 install -Dm0755 init.sh initramfs/init
 cp rootfs.sh initramfs/
-upx --brute initramfs/bin/busybox
 cd initramfs
 find . | sort | cpio -o -H newc -R 0:0 | gzip -9 > ../initramfs.gz
 cd ..
