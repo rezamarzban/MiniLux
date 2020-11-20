@@ -33,6 +33,6 @@ mke2fs -L '' -N 0 -O ^64bit -d "ubunturootfs" -m 5 -r 1 -t ext2 "hard.img" 1G
 echo 
 echo Run bash qemu.sh
 echo 
-echo If make fail, Run bash remake.sh (without again sources downloading).
+echo If make fail then run bash remake.sh
 echo 
 echo 
