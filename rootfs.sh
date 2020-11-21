@@ -1,7 +1,5 @@
 
-#Step1: Make swap and mount hard drive. Maybe you need change /dev/sda to: /dev/sda1 or /dev/hda or /dev/hda1 or so on.
-mkswap /dev/sdb
-swapon /dev/sdb
+#Step1: Mount hard drive. Maybe you need change /dev/sda to: /dev/sda1 or /dev/hda or /dev/hda1 or so on.
 mount -t ext2 /dev/sda /root
 
 #Step2: Clean up ...
