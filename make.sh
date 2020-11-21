@@ -20,7 +20,7 @@ cd initramfs
 find . | sort | cpio -o -H newc -R 0:0 | gzip -9 > ../initramfs.gz
 cd ..
 
-#Step6: Make rootfs image (for virtual machines). Increase hard disk image size by changing 1G to 2G and more at last command.
+#Step6: Make rootfs on hard.img file (for virtual machines). Increase hard disk image size by changing 1G to 2G and more at last command.
 mkdir ubunturootfs
 tar -xf *ubuntu*base*.tar.gz -C ubunturootfs
 install -Dm0755 busybox-x86_64 ubunturootfs/bin/busybox
@@ -29,7 +29,10 @@ cp firstrun.sh ubunturootfs/root/
 cp config.sh ubunturootfs/
 mke2fs -L '' -N 0 -O ^64bit -d "ubunturootfs" -m 5 -r 1 -t ext2 "hard.img" 1G
 
-#Step6: Run qemu ...
+#Step7: Create hard2.img for linux swap, You can increase it by changing 512MB to 1GB and more.
+qemu-img create -f raw hard2.img 512M
+
+#Step8: Run qemu ...
 echo 
 echo Run bash qemu.sh
 echo 
