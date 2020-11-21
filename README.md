@@ -33,3 +33,5 @@ https://drive.google.com/drive/folders/1bFqMWRk9mZFgaeH01mOWUFxZnz7NMOks?usp=sha
 
 7- Pickup the "linux", "initramfs.gz", "hard.img" and "qemu.sh" files from project directory. Everytime that you want to boot to real root filesystem follow the number 2,3 and 4 here instructions.
 
+8- Run "bash /OpenGL.sh" in MiniLux real root filesystem mode to installing OpenGL and GLX completely. It take less than a hour time. The GUI can be accessed by XSDL.
+
