@@ -1,4 +1,4 @@
-# MiniLux
+# MiniLux (with OpenGL and network support)
 simple Minimum Linux shell script initramfs and rootfs images builder with OpenGL and network support from official sources X86_64
 
 A simple and fast powerful AMD64/Intel 64bit linux on arm64/armhf Android phones and Raspberries pi 1,2,3,4,... ; Bring powerful X86_64 computer processes to arm64/armhf devices with it.
