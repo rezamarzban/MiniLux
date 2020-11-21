@@ -25,8 +25,9 @@ mkdir ubunturootfs
 tar -xf *ubuntu*base*.tar.gz -C ubunturootfs
 install -Dm0755 busybox-x86_64 ubunturootfs/bin/busybox
 cp *.deb ubunturootfs/root/
-cp firstrun.sh ubunturootfs/root/
+cp mod.sh ubunturootfs/
 cp config.sh ubunturootfs/
+cp devpts.sh ubunturootfs/
 mke2fs -L '' -N 0 -O ^64bit -d "ubunturootfs" -m 5 -r 1 -t ext2 "hard.img" 1G
 
 #Step7: Create hard2.img image file for linux swap memory (at virtual machines), You can increase it by changing 512MB to 1GB and more.
