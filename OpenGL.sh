@@ -1,5 +1,5 @@
 #Install software accelerated OpenGL, GLX and so on from official sources at MiniLux ...
-#It take less than one hour time to be completed.
+#It take half an hour time approximately to be completed.
 apt-get update
 apt install wget
 cd
