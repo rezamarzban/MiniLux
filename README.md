@@ -7,7 +7,7 @@ MiniLux, Install latest famous official linux distribution only in one minute!
 
 MiniLux, Very fast making from 40MB downloaded official sources only in one minute. Very fast booting only in less than one minute.
 
-MiniLux, A fast bridge to Windows (98, XP, 7, ...) 32bit and 64bit on arm devices (by installing and running wine).
+MiniLux, Quick bridge to the Windows (98, XP, 7, ...) 32bit and 64bit on arm devices (by installing and running wine).
 
 minimum system requirements for MiniLux:
 
@@ -17,9 +17,9 @@ RAM: 64MB
 
 Making images and launching QEMU virtual machine:
 
-Education films for MiniLux are here:
+Training films for each MiniLux making and installing commands are here:
 
-https://drive.google.com/drive/folders/1bFqMWRk9mZFgaeH01mOWUFxZnz7NMOks?usp=sharing
+https://drive.google.com/drive/folders/1XGZbKjzd_A4GlK8YF_x0knG5s046KeF7?usp=sharing
 
 1- First you need a working internet connection, After git cloning the project run "bash make.sh" in the project directory if you installed wget. After running it, you'll see "initramfs.gz", "hard.img" and "hard2.img" files in the project directory. If runing "bash make.sh" fail to making initramfs and rootfs files check the problem then run "bash remake.sh" (without again sources downloading).
 
