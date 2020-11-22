@@ -7,6 +7,8 @@ MiniLux, Install latest famous official linux distribution only in one minute!
 
 MiniLux, Very fast making from 40MB downloaded official sources only in one minute. Very fast booting only in less than one minute.
 
+MiniLux, A fast bridge to Windows (98, XP, 7, ...) 32bit and 64bit on arm devices (by installing and running wine).
+
 minimum system requirements for MiniLux:
 
 CPU: pentium II
