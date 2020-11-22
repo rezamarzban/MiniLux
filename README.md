@@ -19,7 +19,7 @@ Education films for MiniLux are here:
 
 https://drive.google.com/drive/folders/1bFqMWRk9mZFgaeH01mOWUFxZnz7NMOks?usp=sharing
 
-1- First you need a working internet connection, After git cloning the project run "bash make.sh" in the project directory if you installed wget. After running it, you'll see "initramfs.gz" and "disk.img" files in the project directory. If runing "bash make.sh" fail to making initramfs and rootfs files check the problem then run "bash remake.sh" (without again sources downloading).
+1- First you need a working internet connection, After git cloning the project run "bash make.sh" in the project directory if you installed wget. After running it, you'll see "initramfs.gz", "hard.img" and "hard2.img" files in the project directory. If runing "bash make.sh" fail to making initramfs and rootfs files check the problem then run "bash remake.sh" (without again sources downloading).
 
 2- Just run "bash qemu.sh" if you installed qemu-system-X86_64.
 
@@ -31,7 +31,7 @@ https://drive.google.com/drive/folders/1bFqMWRk9mZFgaeH01mOWUFxZnz7NMOks?usp=sha
 
 6- For exit run "exit" at real root filesystem mode. For quit run "busybox reboot" at real filesystem mode or run "reboot" at RAM filesystem mode.
 
-7- Pickup the "linux", "initramfs.gz", "hard.img" and "qemu.sh" files from project directory. Everytime that you want to boot to real root filesystem follow the number 2,3 and 4 here instructions.
+7- Pickup the "linux", "initramfs.gz", "hard.img", "hard2.img" and "qemu.sh" files from project directory. Everytime that you want to boot to real root filesystem follow the number 2,3 and 4 here instructions.
 
-8- Run "bash /OpenGL.sh" in MiniLux real root filesystem mode to installing OpenGL and GLX completely. It take less than a hour time. The GUI can be accessed by XSDL.
+8- Run "bash /OpenGL.sh" in MiniLux real root filesystem mode to installing OpenGL and GLX completely. The GUI can be accessed on XSDL server after exporting DISPLAY and PULSED_... .
 
