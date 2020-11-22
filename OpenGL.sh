@@ -8,4 +8,4 @@ apt install /root/*mesa*swx11*.deb
 cd
 wget http://mirrors.kernel.org/ubuntu/pool/universe/m/mesa-demos/mesa-utils_8.4.0-1_amd64.deb
 apt install /root/mesa*utils*.deb
-echo After exporting DISPLAY and PULSED_... to correct XSDL run glxinfo to view OpenGL informations. Run glxgears to testing it.
+echo After exporting DISPLAY and PULSED_... to correct XSDL server, run glxinfo to viewing OpenGL informations. Run glxdemos to testing it.
