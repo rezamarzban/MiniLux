@@ -5,7 +5,7 @@ MiniLux, Building and launching linux from 40MB latest official sources and boot
 
 MiniLux, Linux x64 on ARM devices (Android phones and tablets, Raspberries Pi 1,2,3,...).
 
-MiniLux, Quick way to Windows x64 98,XP, 7, ... .
+MiniLux, Quick way to Windows x64 XP, 7, 8, ... .
 
 Training films for each MiniLux making and installing commands are here:
 
