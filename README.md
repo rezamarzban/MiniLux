@@ -1,39 +1,32 @@
-# MiniLux (OpenGL, network support)
-simple Minimum Linux shell script initramfs and rootfs images builder with OpenGL and network support from official sources X86_64
+# MiniLux-64bit
+simple Minimum Linux shell script initramfs and rootfs images builder with Windows 64bit, OpenGL and network support from official x64 sources
 
-Simple and fast powerful AMD64/Intel 64bit linux on arm64/armhf Android phones and Raspberries pi 1,2,3,4,... ; Bring powerful X86_64 computer processes to arm64/armhf devices with it.
+MiniLux, Building and launching linux from 40MB latest official sources and booting just in one minute!
 
-MiniLux, Install latest famous official linux distribution only in one minute!
+MiniLux, Linux x64 on ARM devices (Android phones and tablets, Raspberries Pi 1,2,3,...).
 
-MiniLux, Very fast making from 40MB downloaded official sources only in one minute. Very fast booting only in less than one minute.
-
-MiniLux, Quick bridge to the Windows (98, XP, 7, ...) 32bit and 64bit on arm devices (by installing and running wine).
-
-minimum system requirements for MiniLux:
-
-CPU: pentium II
-
-RAM: 64MB
-
-Making images and launching QEMU virtual machine:
+MiniLux, Quick way to Windows x64 98,XP, 7, ... .
 
 Training films for each MiniLux making and installing commands are here:
 
 https://drive.google.com/drive/folders/1XGZbKjzd_A4GlK8YF_x0knG5s046KeF7?usp=sharing
 
-1- First you need a working internet connection, After git cloning the project run "bash make.sh" in the project directory if you installed wget. After running it, you'll see "initramfs.gz", "hard.img" and "hard2.img" files in the project directory. If runing "bash make.sh" fail to making initramfs and rootfs files check the problem then run "bash remake.sh" (without again sources downloading).
+Making and launching instruction:
 
-2- Just run "bash qemu.sh" if you installed qemu-system-X86_64.
+1- Run "git clone https://github.com/marzban2030/MiniLux".
 
-3- While virtual machine has been launched, It will boot to RAM filesystem mode. Login to it with username "root" and no password. Then run "sh /rootfs.sh" to mounting real root filesystem.
+2- Run "bash make.sh" in the project directory. Run "bash remake.sh" (Remake without again sources downloading) if running make.sh failed.
 
-4- while real root filesystem has been launched run "bash /config.sh" to configuring system and network. At first time it takes more time to complete because of installing linux modules.
+3- Run "bash qemu.sh". It use qemu-system-x86_64 command, So install its package in the host OS before everything.
 
-5- Run "busybox ping google.com" and enjoy! Press Ctrl+c to breaking the process.
+4- Enter to the root RAM filesystem mode with username "root" and no password.
 
-6- For exit run "exit" at real root filesystem mode. For quit run "busybox reboot" at real filesystem mode or run "reboot" at RAM filesystem mode.
+5- Run "sh /rootfs.sh" in the RAM filesystem mode to changing to real root filesystem mode.
 
-7- Pickup the "linux", "initramfs.gz", "hard.img", "hard2.img" and "qemu.sh" files from project directory. Everytime that you want to boot to real root filesystem follow the number 2,3 and 4 here instructions.
+6- Run "bash /config.sh" in the real root filesystem mode at every boot to configuring the system and network.
 
-8- Run "bash /OpenGL.sh" in MiniLux real root filesystem mode to installing OpenGL and GLX completely. The GUI can be accessed on XSDL server after exporting DISPLAY and PULSED_... .
+7- Run "bash /OpenGL.sh" in the real root filesystem mode to installing OpenGL and GLX if you need these.
 
+8- Run "apt install wine-stable" in the real root filesystem mode to installing window in linux if you need this! Do not forget: A- Increase hard.img size from 1G to 2G in the make.sh and remake.sh files before making images. B- apt should be updated by running "apt-get update" in real root filesystem mode before running this command.
+
+9- Run "busybox reboot" in the real root filesystem mode to exiting.
