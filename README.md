@@ -1,5 +1,5 @@
 # MiniLux-64bit
-simple Minimum Linux shell script initramfs and rootfs images builder with Windows 64bit, OpenGL and network support from official x64 sources
+simple Minimum Linux initramfs and rootfs images builder shell script with Windows 64bit, OpenGL and network support from official x64 sources
 
 MiniLux, Building and launching linux from 40MB latest official sources and booting just in one minute!
 
@@ -33,7 +33,7 @@ Making and launching instruction:
 
 5- Run "sh /rootfs.sh" in the RAM filesystem mode to changing to real root filesystem mode.
 
-6- Run "bash /config.sh" in the real root filesystem mode at every boot to configuring the system and network.
+6- Run "bash /config.sh" in the real root filesystem mode at every boot to configuring the system and network. It takes more time to be completed at first run. If you see an error about network please change Linux Module Generic deb package download URL (corresponding to the present linux kernel version, For example if Linux kernel version is 4.15.0 find Linux Module Generic deb package 4.15.0-xx) at "make.sh" file and do a clean install again.
 
 7- Run "bash /OpenGL.sh" in the real root filesystem mode to installing OpenGL and GLX if you need these.
 
