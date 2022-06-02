@@ -11,6 +11,16 @@ Training films for each MiniLux making and installing commands are here:
 
 https://drive.google.com/drive/folders/1XGZbKjzd_A4GlK8YF_x0knG5s046KeF7?usp=sharing
 
+Install required packages by running below commands at Ubuntu shell:
+
+sudo apt-get update
+
+sudo apt install wget cpio tar e2fsprogs qemu-utils qemu-system-x64 git
+
+Also run below command if "install" command is not exist at Ubuntu:
+
+sudo apt install r-base-core
+
 Making and launching instruction:
 
 1- Run "git clone https://github.com/marzban2030/MiniLux".
