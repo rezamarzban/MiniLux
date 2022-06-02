@@ -15,7 +15,7 @@ Install required packages by running below commands at Ubuntu shell:
 
 sudo apt-get update
 
-sudo apt install wget cpio tar e2fsprogs qemu-utils qemu-system-x64 git
+sudo apt install wget cpio tar e2fsprogs qemu-utils qemu-system-x86 git
 
 Also run below command if "install" command is not exist at Ubuntu:
 
