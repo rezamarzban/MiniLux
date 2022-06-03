@@ -35,8 +35,11 @@ Making and launching instruction:
 
 6- Run "bash /config.sh" in the real root filesystem mode at every boot to configuring the system and network. It takes more time to be completed at first run. If you see an error about network please change "linux-modules-x.xx.x-xxx*generic*.deb" package download URL to the correct version at "make.sh" file manually (corresponding to the downloaded latest Linux kernel version and CPU architecture, For example if downloaded latest Linux kernel version is 4.15.0-156 find Linux module generic deb package 4.15.0-156* from internet which is similar version), Then delete everything and do a clean install again. In other words MiniLux uses latest official Linux kernel for Ubuntu 18.04 distribution, So manually change the Linux modules download URL at "make.sh" to the latest version if you see an error about network configuration at MiniLux real root file system mode.
 
-Watch successful run clip after last make.sh change at June 2022:
+Watch successful run and ping clip after last make.sh change at June 2022:
 https://drive.google.com/file/d/18xapz-1pRv_gz27vEcQM2gaLR4AsecID/view?usp=sharing
+
+View list directory screenshot after successful make and run at June 2022:
+https://drive.google.com/file/d/1Ds26H0H19s3A1djkuElIpt-F6Ztx4xhQ/view?usp=sharing
 
 7- Run "bash /OpenGL.sh" in the real root filesystem mode to installing OpenGL and GLX if you need these.
 
