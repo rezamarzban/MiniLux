@@ -46,3 +46,5 @@ https://drive.google.com/file/d/1Ds26H0H19s3A1djkuElIpt-F6Ztx4xhQ/view?usp=shari
 8- Run "apt install wine-stable" in the real root filesystem mode to installing window in linux if you need this! Do not forget: A- Increase hard.img size from 1G to 2G in the make.sh and remake.sh files before making images. B- apt should be updated by running "apt-get update" in real root filesystem mode before running this command.
 
 9- Run "busybox reboot" in the real root filesystem mode to exiting.
+
+Anything is ready, Everytime that you want to run the system after successful make and first run do from step 3 to end (Run bash qemu.sh)
